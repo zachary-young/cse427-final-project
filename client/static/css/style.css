@@ -30,8 +30,17 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 80%;
 }
 #downloadBtn{
-    display: none;
+    text-decoration: none;
+    color: black;
 }
 body{
     background: linear-gradient(296.82deg, #1F1F1F, #464646);
+    color: white
+}
+#downloadDiv p{
+    display: inline-block;
+}
+#downloadDiv{
+    margin-top: 20px;
+    font-size: 25px;
 }
