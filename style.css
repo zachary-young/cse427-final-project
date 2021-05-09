@@ -1,0 +1,37 @@
+#mainHeading{
+    /* position: absolute;
+width: 456px;
+height: 192px;
+left: 264px;
+top: 375px; */
+
+font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 144px;
+line-height: 192px;
+/* color: linear-gradient(#BA4300,#EF9103); */
+background: -webkit-linear-gradient(right,#EF9103,#BA4300);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+/* identical to box height */
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#smallHeading{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+}
+#mainBox{
+    margin: 10% auto;
+    width: 80%;
+}
+#downloadBtn{
+    display: none;
+}
+body{
+    background: linear-gradient(296.82deg, #1F1F1F, #464646);
+}
