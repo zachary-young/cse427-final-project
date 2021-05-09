@@ -3,7 +3,6 @@ from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
 import os
 
-# from werkzeug import secure_filename
 app = Flask(__name__, template_folder='../client/template', static_folder='../client/static')
 app.secret_key = '\x17Y\x98\x10!\x9c"\x11\t\x14\x03v\xa1\x1c\xc2\x07|\xdd\xc2H\xde\x9f\x9b\x19'
 uploads_dir = os.path.join(app.instance_path, 'files')
@@ -12,7 +11,6 @@ uploads_dir = os.path.join(app.instance_path, 'files')
 @app.route('/')
 def home():
     return render_template("index.html")
-    # return 'It works!'
     
 #stores uploaded file
 @app.route('/uploader', methods=['GET', 'POST'])
@@ -20,6 +18,7 @@ def upload_file():
     if request.method == 'POST':
         f = request.files['myFile']
         session["fileName"] = secure_filename(f.filename)
+        print(uploads_dir)
         f.save(os.path.join(uploads_dir, secure_filename(f.filename)))
         return render_template("index.html")
 

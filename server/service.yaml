@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "http"
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:us-east-1:129002994932:certificate/1fb524a1-dde6-455a-8b57-26e8be709eac
+    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "https"
+spec:
+  type: LoadBalancer
+  selector:
+    app: gaida
+  ports:
+    - name: http
+      port: 80
+      targetPort: 5000
+    - name: https
+      port: 443
+      targetPort: 5000
