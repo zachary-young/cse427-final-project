@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(296.82deg, #1f1f1f, #464646);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 144px;
+  background: -webkit-linear-gradient(right, #ef9103, #ba4300);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.line {
+  background: linear-gradient(296.82deg, #ef9103, #ba4300);
+  width: 3px;
+  margin-right: 40px;
+  align-self: stretch;
+}
+
+#audio {
+  display: none;
+}
+
+.file {
+  border: 3px solid #fff;
+  border-radius: 15px;
+  padding: 10px 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.button:hover {
+  border-color: #a5a5a5;
+  color: #a5a5a5;
+  cursor: pointer;
+}
+.button:active {
+  border-color: #fff;
+  background: #fff;
+  color: #000;
+}
+
+.upload {
+  background: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 100px;
+  padding: 15px 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.form {
+  margin-top: 30px;
+}
